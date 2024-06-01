@@ -26,6 +26,9 @@ jobs:
       - name: Install cypress dependencies
         run: npm ci
 
+      - name: Set script permissions
+        run: chmod +x ./deploy-script.sh
+
       - name: Start Application
         run: ./deploy-script.sh &
 
