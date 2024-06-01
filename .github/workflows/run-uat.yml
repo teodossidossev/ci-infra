@@ -4,6 +4,8 @@ on:
   repository_dispatch:
     types: [trigger-uat-event]
 
+  workflow_dispatch:
+
 jobs:
   triggered-job:
     runs-on: ubuntu-latest
